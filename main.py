@@ -4,11 +4,11 @@ from money_machine import MoneyMachine
 
 is_on = True
 
+sirCoffee = CoffeeMaker()
+sirMoney = MoneyMachine()
+sirMenu = Menu()
+options = sirMenu.get_items()
 while is_on:
-    sirCoffee = CoffeeMaker()
-    sirMoney = MoneyMachine()
-    sirMenu = Menu()
-    options = sirMenu.get_items()
     order_name = input(f"What drink would you like?: {options}")
     if order_name == "report":
         sirCoffee.report()
